@@ -1,5 +1,6 @@
 package org.AITest.com.utils;
 
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -11,6 +12,7 @@ import java.time.Duration;
 public class WaitUtils {
 
     private static final int DEFAULT_EXPLICIT_WAIT = 20; // Default wait in seconds
+    private static final Logger logger = LoggerUtil.getLogger(WaitUtils.class);
 
     /**
      * Waits for the visibility of a WebElement using WebDriverWait.
@@ -132,8 +134,11 @@ public class WaitUtils {
         }
     }
 
+
+
     // Private constructor to prevent instantiation
     private WaitUtils() {
         throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
     }
+
 }

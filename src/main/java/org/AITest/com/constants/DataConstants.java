@@ -5,7 +5,7 @@ public class DataConstants {
     // Base application URL
     public static final String VALID_USERNAME = "testparabank";
     public static final String INVALID_USERNAME = "testparabank";
-    public static final String VALID_PWD = "test";
+    public static final String VALID_PWD = "testparabank";
     public static final String INVALID_PWD = "test";
 
 
